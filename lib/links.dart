@@ -5,6 +5,7 @@ import 'Farmer/whitetheme.dart';
 import 'UI4/Screen/homePage.dart';
 import 'carDashboard/screens/homePage.dart';
 import 'first/home.dart';
+import 'foodDelivery/foodHome.dart';
 import 'form/home.dart';
 import 'second/Page1.dart';
 // import 'second/page2.dart';
@@ -50,9 +51,13 @@ class _LinksState extends State<Links> {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => DarkTheme()));
               }),
-              _card("Sixth Page", () {
+              _card("Form", () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => HomeForm()));
+              }),
+              _card("Food Delivery", () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => FoodHome()));
               }),
             ]),
           ),
